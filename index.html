@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: #f0f8fb;
+            background-color: #edf3f5;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            padding-bottom: 0%;
+            height: 100vh;
+        }
+        
+        h1 {
+            color: #1877f2;
+            text-align: center;
+            margin: 6%;
+            /* font-family: "Roboto", sans-serif; */
+            font-weight: 700;
+            font-size: 3.1em;
+            margin-top: 5%;
+        }
+        
+        h2 {
+            margin: .5em auto;
+            margin-bottom: .1em;
+            font-size: 1.2em;
+        }
+        
+        h4 {
+            color: #86898c;
+            font-weight: normal;
+            margin: .1em auto;
+            margin-bottom: .7em;
+            font-size: .8em;
+        }
+        
+        p {
+            color: #86898c;
+            font-size: .8em;
+        }
+        
+        .hr {
+            border: 0px;
+            border-top: .1px solid #86898c50;
+            width: 104.5%;
+            transform: translateX(-2.2%);
+        }
+        
+        .p-footer {
+            font-size: .6em;
+            margin-top: -4%;
+            text-align: left;
+            margin-left: 1%;
+        }
+        
+        a {
+            color: #385898;
+            text-decoration: none;
+        }
+        
+        .container1 {
+            width: 375px;
+            width: 350px;
+            max-width: 90%;
+            margin: 0 auto;
+            height: auto;
+            margin-bottom: 0%;
+        }
+        
+        .container {
+            background-color: white;
+            box-shadow: 0px 3px 8px 2px rgba(198, 197, 197, 0.75);
+            -webkit-box-shadow: 0px 3px 8px 2px rgba(197, 197, 197, 0.75);
+            -moz-box-shadow: 0px 3px 8px 2px rgba(193, 189, 189, 0.75);
+            margin: auto;
+            padding: 2.5%;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20%;
+        }
+        
+        .foot {
+            background-color: white;
+            height: 32%;
+            margin-bottom: 0%;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input {
+            margin: 1%;
+            border: 1px solid rgb(188, 185, 185);
+            border-color: #ccd0d5;
+            border-radius: 5px;
+            /* box-sizing: border-box; */
+            outline-color: rgba(0, 0, 255, 0);
+        }
+        
+        input::placeholder {
+            color: #86898c;
+            font-size: .9em;
+        }
+        
+        .div1 {
+            width: 100%;
+            display: block;
+            padding: 1%;
+            margin: auto;
+            /* box-sizing: border-box; */
+        }
+        
+        .input-Fn {
+            width: 49%;
+            padding: 2%;
+            /* box-sizing: border-box; */
+            margin: 1% 0;
+        }
+        
+        .input-Ln {
+            width: 49%;
+            padding: 2%;
+            box-sizing: border-box;
+            margin: 1% 0;
+        }
+        
+        .input-Mn {
+            width: 100%;
+            padding: 2%;
+            box-sizing: border-box;
+            margin: 1% 0;
+        }
+        
+        .First-last {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .select-div {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        select {
+            border: 1px solid rgb(188, 185, 185);
+            border-color: #ccd0d5;
+            width: 32.7%;
+            padding: 1.5%;
+            border-radius: 5px;
+            margin: 1% 0;
+            height: 35px;
+            outline-color: rgba(0, 0, 255, 0);
+            font-size: .8em;
+        }
+        
+        .radio-div {
+            border: 1px solid rgb(188, 185, 185);
+            width: 32.7%;
+            padding: 0% 2%;
+            border-radius: 5px;
+            margin: 1% 0;
+            height: 35px;
+            align-items: center;
+        }
+        
+        .radio-flex {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        label.ash-label {
+            color: #86898c;
+            font-size: .8em;
+            margin-bottom: 10%;
+        }
+        
+        label {
+            line-height: 35px;
+            font-size: .8em;
+        }
+        
+        .button {
+            color: white;
+            font-weight: bold;
+            background-color: #00A400;
+            border-radius: 6px;
+            border: 0;
+            padding: 0 32px;
+            height: 34px;
+            width: 160px;
+            margin: 2%;
+        }
+        
+        div.container>a {
+            display: block;
+            margin: 3% auto;
+            color: #1877f2;
+            text-decoration: none;
+            font-size: .9em;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container1">
+        <h1>facebook</h1>
+        <div class="container">
+            <h2>Create a new account</h2>
+            <h4>It's quick and easy</h4>
+            <hr class="hr" />
+            <form class="div1">
+                <div class="First-last">
+                    <input class="input-Fn" type="text" placeholder="First name" />
+                    <input class="input-Ln" type="text" placeholder="Surname" />
+                </div>
+
+                <div>
+                    <input class="input-Mn" type="text" placeholder="Mobile number or email address" />
+                </div>
+                <div>
+                    <input class="input-Mn" type="password" placeholder="New password" />
+                </div>
+                <div style="text-align: left">
+                    <label for="DOB" class="ash-label">
+              Date of birth
+              <span
+                style="
+                font-size: 0.6rem;
+                font-weight: bold;
+                background-color: rgba(10, 10, 10, 0.6);
+                color: rgb(255, 255, 255);
+                border: 0px solid black;
+                border-radius: 50%;
+                padding: 0% 0.8%;
+                padding-top: 0.2%;
+                "
+                >&quest;</span
+              >
+            </label>
+
+                    <div class="select-div">
+                        <select name="DOB">
+                <option value="23">23</option>
+                <option value="24">24</option>
+              </select>
+                        <select name="DOB">
+                <option value="May">May</option>
+                <option value="June">June</option>
+              </select>
+                        <select name="DOB">
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+              </select>
+                    </div>
+                </div>
+
+                <div style="text-align: left">
+                    <label for="DOB" class="ash-label">
+              Gender
+              <span
+                style="
+                  font-size: 0.6rem;
+                  font-weight: bold;
+                  background-color: rgba(10, 10, 10, 0.6);
+                  color: rgb(255, 255, 255);
+                  border: 0px solid black;
+                  border-radius: 50%;
+                  padding: 0% 0.8%;
+                  padding-top: 0.2%;
+                "
+                >&quest;</span
+              >
+            </label>
+
+                    <div class="select-div">
+                        <div class="radio-div">
+                            <div class="radio-flex">
+                                <label for="Female">Female</label>
+                                <input type="radio" name="Gender" id="Female" value="Female" />
+                            </div>
+                        </div>
+                        <div class="radio-div">
+                            <div class="radio-flex">
+                                <label for="Male">Male</label>
+                                <input type="radio" name="Gender" id="Male" value="Male" />
+                            </div>
+                        </div>
+                        <div class="radio-div">
+                            <div class="radio-flex">
+                                <label for="Custom">Custom</label>
+                                <input type="radio" name="Gender" id="Custom" value="Custom" />
+                            </div>
+                        </div>
+
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <p class="p-footer">
+                By clicking Sign Up, you agree to our <a href="#">Terms,</a> <a href="#">Data Policy</a> and <a href="#">Cookie Policy.</a> You may recieve SMS notifications from us and can opt out at any time.
+            </p>
+            <button class="button">Sign Up</button>
+            <br>
+            <a href="#">Already have an account?</a>
+        </div>
+    </main>
+    <div class="foot">&nbsp;</div>
+
+</body>
+
+</html>
